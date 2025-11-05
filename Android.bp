@@ -21992,22 +21992,6 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
-    name: "init.kernel.post_boot-cape",
-    owner: "oneplus",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-cape.sh",
-    filename: "init.kernel.post_boot-cape.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-taro",
-    owner: "oneplus",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-taro.sh",
-    filename: "init.kernel.post_boot-taro.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.kernel.post_boot",
     owner: "oneplus",
     src: "proprietary/vendor/bin/init.kernel.post_boot.sh",
