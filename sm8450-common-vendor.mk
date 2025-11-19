@@ -1014,8 +1014,6 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.oplus.hardware.charger-V1-ndk \
-    vendor.oplus.hardware.displaypanelfeature-V1-ndk \
-    vendor.oplus.hardware.displaypanelfeature@1.0 \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal-V1-ndk \
     vendor.qti.diaghal@1.0 \
