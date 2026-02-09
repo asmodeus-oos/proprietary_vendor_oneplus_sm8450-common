@@ -6,12 +6,25 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8450-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/ThermalServiceConfig/sys_thermal_config.xml:$(TARGET_COPY_OUT_ODM)/etc/ThermalServiceConfig/sys_thermal_config.xml \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/EU/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/EU/acdb_cal.acdb \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/ORANGE/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/ORANGE/acdb_cal.acdb \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/VDF/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/VDF/acdb_cal.acdb \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_cal.acdb \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/gps.conf:$(TARGET_COPY_OUT_ODM)/etc/gps.conf \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V6-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V6-service.rc \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/temperature_profile/sys_high_temp_protect_realme_216AC.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_high_temp_protect_realme_216AC.xml \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/temperature_profile/sys_thermal_control_config_gt.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config_gt.xml \
     vendor/oneplus/sm8450-common/proprietary/odm/firmware/fastchg/charge_time_config.csv:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charge_time_config.csv \
     vendor/oneplus/sm8450-common/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
     vendor/oneplus/sm8450-common/proprietary/odm/firmware/tp/21631/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21631/FW_S3908_SAMSUNG.img \
@@ -56,6 +69,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/waipio_cdp/CDP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_cdp/CDP_acdb_cal.acdb \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/waipio_cdp/CDP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_cdp/CDP_workspaceFileXml.qwsp \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/waipio_mtp/MTP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/MTP_workspaceFileXml.qwsp \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/waipio_qrd/QRD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_qrd/QRD_acdb_cal.acdb \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/acdbdata/waipio_qrd/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_qrd/QRD_workspaceFileXml.qwsp \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
@@ -118,6 +137,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
+    vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/oneplus/sm8450-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -337,6 +357,26 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn
 
 PRODUCT_PACKAGES += \
+    libpwirisfeature \
+    libasphere \
+    libaudiopreprocessing \
+    libbundlewrapper \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libhapticgenerator \
+    libldnhncr \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libreverbwrapper \
+    libshoebox \
+    libvisualizer \
+    libvolumelistener \
+    vendor.pixelworks.hardware.display@1.0 \
+    vendor.pixelworks.hardware.display@1.1 \
+    vendor.pixelworks.hardware.display@1.2 \
+    vendor.pixelworks.hardware.feature@1.0 \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
@@ -560,7 +600,6 @@ PRODUCT_PACKAGES += \
     libprekill \
     libprocomp \
     libpsmoptfeature \
-    libpwirisfeature \
     libpwirishalwrapper \
     libqapesdk \
     libqc2audio_base \
@@ -736,8 +775,6 @@ PRODUCT_PACKAGES += \
     qtiril-utils \
     qtiwakelock \
     sensors.ssc \
-    libasphere \
-    libshoebox \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -890,91 +927,91 @@ PRODUCT_PACKAGES += \
     vendor.qti.power.pasrmanager@1.0 \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
-    bm2n00 \
-    bm2n01 \
-    bm2n02 \
-    bm2n03 \
-    bm2n04 \
-    bm2n05 \
-    bm2n06 \
-    bm2n07 \
-    bm2n08 \
-    bm2n09 \
-    bm2n10 \
-    bm2n11 \
-    bm2n12 \
-    bm2n13 \
-    bm2n14 \
-    bm2n15 \
-    bm2n16 \
-    bm2n17 \
-    bm2n18 \
-    bm2n19 \
-    bm2n20 \
-    bm2n21 \
-    bm2n22 \
-    bm2n23 \
-    bm2n24 \
-    bm2n25 \
-    bm2n26 \
-    bm2n27 \
-    bm2n31 \
-    bm2n32 \
-    bm2n33 \
-    bm2n34 \
-    bm2n35 \
-    bm2n36 \
-    bm2n37 \
-    bm2n38 \
-    bm2n39 \
-    bm2n40 \
-    bm2n41 \
-    bm2n42 \
-    bm2n43 \
-    bm2n44 \
-    bm2n45 \
-    bm2n46 \
-    bm2n47 \
-    bm2n48 \
-    bm2n49 \
-    bm2n50 \
-    bm2n51 \
-    bm2n52 \
-    bm2n53 \
-    bm2n54 \
-    bm2n55 \
-    libDspIOProxy_skel \
-    libQ6MSFR_manager_skel \
-    libVppFrcQnnHtp \
-    libVppQnnHtp \
-    libadsp_jpege_skel \
-    libapn_dsp_skel \
-    libbitml_nsp_skel \
-    libbitml_nsp_v2_skel \
-    libcamera_nn_skel \
-    libcvpdsp_2_1 \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libdsp_streamer_qvrcam_receiver \
-    libevadsp_3_0 \
-    libeye_tracking_dsp_sample_skel \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhalide_hexagon_remote_skel \
-    libhdr_skel_vendor \
-    libhme_dsp_skel \
-    libmctfengine_skel \
-    libmobilenet_dsp_frc \
-    libmobilenet_dsp_frc_networks \
-    libosie_skel \
-    libqvr_cam_dsp_driver_skel \
-    libqvr_dsp_driver_skel \
-    libscveT2T_skel \
-    libtracker_6dof_skel_8250 \
-    libtracker_6dof_skel_8350 \
-    libvpp_ais_networks \
-    libvpp_vqa_networks \
-    libvpt_action_recognition \
+    vendor_lib_rfsa_adsp_bm2n00_bin \
+    vendor_lib_rfsa_adsp_bm2n01_bin \
+    vendor_lib_rfsa_adsp_bm2n02_bin \
+    vendor_lib_rfsa_adsp_bm2n03_bin \
+    vendor_lib_rfsa_adsp_bm2n04_bin \
+    vendor_lib_rfsa_adsp_bm2n05_bin \
+    vendor_lib_rfsa_adsp_bm2n06_bin \
+    vendor_lib_rfsa_adsp_bm2n07_bin \
+    vendor_lib_rfsa_adsp_bm2n08_bin \
+    vendor_lib_rfsa_adsp_bm2n09_bin \
+    vendor_lib_rfsa_adsp_bm2n10_bin \
+    vendor_lib_rfsa_adsp_bm2n11_bin \
+    vendor_lib_rfsa_adsp_bm2n12_bin \
+    vendor_lib_rfsa_adsp_bm2n13_bin \
+    vendor_lib_rfsa_adsp_bm2n14_bin \
+    vendor_lib_rfsa_adsp_bm2n15_bin \
+    vendor_lib_rfsa_adsp_bm2n16_bin \
+    vendor_lib_rfsa_adsp_bm2n17_bin \
+    vendor_lib_rfsa_adsp_bm2n18_bin \
+    vendor_lib_rfsa_adsp_bm2n19_bin \
+    vendor_lib_rfsa_adsp_bm2n20_bin \
+    vendor_lib_rfsa_adsp_bm2n21_bin \
+    vendor_lib_rfsa_adsp_bm2n22_bin \
+    vendor_lib_rfsa_adsp_bm2n23_bin \
+    vendor_lib_rfsa_adsp_bm2n24_bin \
+    vendor_lib_rfsa_adsp_bm2n25_bin \
+    vendor_lib_rfsa_adsp_bm2n26_bin \
+    vendor_lib_rfsa_adsp_bm2n27_bin \
+    vendor_lib_rfsa_adsp_bm2n31_bin \
+    vendor_lib_rfsa_adsp_bm2n32_bin \
+    vendor_lib_rfsa_adsp_bm2n33_bin \
+    vendor_lib_rfsa_adsp_bm2n34_bin \
+    vendor_lib_rfsa_adsp_bm2n35_bin \
+    vendor_lib_rfsa_adsp_bm2n36_bin \
+    vendor_lib_rfsa_adsp_bm2n37_bin \
+    vendor_lib_rfsa_adsp_bm2n38_bin \
+    vendor_lib_rfsa_adsp_bm2n39_bin \
+    vendor_lib_rfsa_adsp_bm2n40_bin \
+    vendor_lib_rfsa_adsp_bm2n41_bin \
+    vendor_lib_rfsa_adsp_bm2n42_bin \
+    vendor_lib_rfsa_adsp_bm2n43_bin \
+    vendor_lib_rfsa_adsp_bm2n44_bin \
+    vendor_lib_rfsa_adsp_bm2n45_bin \
+    vendor_lib_rfsa_adsp_bm2n46_bin \
+    vendor_lib_rfsa_adsp_bm2n47_bin \
+    vendor_lib_rfsa_adsp_bm2n48_bin \
+    vendor_lib_rfsa_adsp_bm2n49_bin \
+    vendor_lib_rfsa_adsp_bm2n50_bin \
+    vendor_lib_rfsa_adsp_bm2n51_bin \
+    vendor_lib_rfsa_adsp_bm2n52_bin \
+    vendor_lib_rfsa_adsp_bm2n53_bin \
+    vendor_lib_rfsa_adsp_bm2n54_bin \
+    vendor_lib_rfsa_adsp_bm2n55_bin \
+    vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
+    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
+    vendor_lib_rfsa_adsp_libVppFrcQnnHtp \
+    vendor_lib_rfsa_adsp_libVppQnnHtp \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libapn_dsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
+    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
+    vendor_lib_rfsa_adsp_libcvpdsp_2_1_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so \
+    vendor_lib_rfsa_adsp_libevadsp_3_0_so \
+    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_skel_so \
+    vendor_lib_rfsa_adsp_libhme_dsp_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc \
+    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_networks \
+    vendor_lib_rfsa_adsp_libosie_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8250_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8350_so \
+    vendor_lib_rfsa_adsp_libvpp_ais_networks \
+    vendor_lib_rfsa_adsp_libvpp_vqa_networks \
+    vendor_lib_rfsa_adsp_libvpt_action_recognition \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1033,6 +1070,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk \
+    libpwirisIoctlWrapper \
+    libpwiriscalibrate \
+    libpwirisservice \
+    libpwirissoft \
+    libpwsoftirisPCS \
+    vendor.oplus.hardware.charger-V6-ndk_platform \
+    vendor.oplus.hardware.charger@1.0 \
     lib-virtual-modem-protos \
     libGaiaClient_vnd \
     libaiboost_qnn_sr \
@@ -1050,15 +1094,9 @@ PRODUCT_PACKAGES += \
     libosenseaidlhalclient \
     libosie_process \
     libosie_stub \
-    libpwirisIoctlWrapper \
-    libpwiriscalibrate \
-    libpwirisservice \
-    libpwirissoft \
-    libpwsoftirisPCS \
     libsnapdragoncolor-pxlw \
     libziparchive_odm \
     libwvdrmengine \
-    vendor.oplus.hardware.charger-V6-ndk_platform \
     CACertService \
     CneApp \
     IWlanService \
@@ -1097,9 +1135,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     vendor.qti.ims.rcsuceaidlservice-V1-java \
+    vendor.oplus.hardware.charger-V1.0-java \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.security.keymint-service-qti.xml \
+    android.hardware.thermal@2.0-service.qti.xml \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
     vendor.qti.diag.hal.service.xml \
@@ -1133,6 +1173,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.1-service-qti \
     android.hardware.security.keymint-service-qti \
+    android.hardware.thermal@2.0-service.qti-v2 \
     qconfigservice \
     qcrilNrd \
     vendor.display.color@1.0-service \
@@ -1215,7 +1256,8 @@ PRODUCT_PACKAGES += \
     vendor.pixelworks.hardware.display.iris-service \
     vendor.pixelworks.hardware.feature.irisfeature-service \
     irisConfig \
-    oplus_sensor_fb
+    oplus_sensor_fb \
+    opnscr_aidl
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib64_arm64_libimscamera_jni_so \
