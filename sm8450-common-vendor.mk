@@ -339,6 +339,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn
 
 PRODUCT_PACKAGES += \
+    liboplusmmdebug \
     libpwirisfeature \
     libasphere \
     libaudiopreprocessing \
@@ -962,6 +963,13 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libvpp_ais_networks \
     vendor_lib_rfsa_adsp_libvpp_vqa_networks \
     vendor_lib_rfsa_adsp_libvpt_action_recognition \
+    libHeifEncoderWrapper \
+    libHeifWinBufExchg-jni \
+    libNativeWinBuffExchange \
+    liboplusHeifDecoderImpl \
+    liboplus_10bitHeif \
+    liboplus_heifconverter \
+    liboplusheifwriter \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1201,6 +1209,7 @@ PRODUCT_PACKAGES += \
     vendor.pixelworks.hardware.display.iris-service \
     vendor.pixelworks.hardware.feature.irisfeature-service \
     irisConfig \
+    oplus_performance \
     oplus_sensor_fb \
     opnscr_aidl
 

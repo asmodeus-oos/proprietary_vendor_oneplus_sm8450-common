@@ -15,6 +15,48 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "liboplusmmdebug",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/liboplusmmdebug.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/liboplusmmdebug.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libpwirisfeature",
     owner: "oneplus",
     strip: {
@@ -4414,7 +4456,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libbinder",
                 "libdrm",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libdisplaydebug",
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
@@ -10121,7 +10163,7 @@ cc_prebuilt_library_shared {
                 "libdisplaydebug",
                 "libsdm-color",
                 "libbinder",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libsdmutils",
                 "libdrm",
                 "libdigital-dimming",
@@ -17437,6 +17479,415 @@ prebuilt_rfsa {
 }
 
 cc_prebuilt_library_shared {
+    name: "libHeifEncoderWrapper",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libHeifEncoderWrapper.so",
+            ],
+            shared_libs: [
+                "liboplusheifwriter",
+                "libutils",
+                "libstagefright",
+                "libstagefright_foundation",
+                "liblog",
+                "libmedia_omx",
+                "libmedia",
+                "libmedia_codeclist",
+                "libnativehelper",
+                "libandroid_runtime",
+                "libnativewindow",
+                "libui",
+                "libgui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libHeifEncoderWrapper.so",
+            ],
+            shared_libs: [
+                "liboplusheifwriter",
+                "libutils",
+                "libstagefright",
+                "libstagefright_foundation",
+                "liblog",
+                "libmedia_omx",
+                "libmedia",
+                "libmedia_codeclist",
+                "libnativehelper",
+                "libandroid_runtime",
+                "libnativewindow",
+                "libui",
+                "libgui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHeifWinBufExchg-jni",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libHeifWinBufExchg-jni.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libHeifEncoderWrapper",
+                "libNativeWinBuffExchange",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libGLESv2",
+                "libEGL",
+                "libnativewindow",
+                "libz",
+                "libc",
+                "libm",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libHeifWinBufExchg-jni.so",
+            ],
+            shared_libs: [
+                "libHeifEncoderWrapper",
+                "libNativeWinBuffExchange",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libGLESv2",
+                "libEGL",
+                "libnativewindow",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libNativeWinBuffExchange",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libNativeWinBuffExchange.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libnativewindow",
+                "libui",
+                "libgui",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libNativeWinBuffExchange.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libnativewindow",
+                "libui",
+                "libgui",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboplusHeifDecoderImpl",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/liboplusHeifDecoderImpl.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "liblog",
+                "libutils",
+                "libmedia",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/liboplusHeifDecoderImpl.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "liblog",
+                "libutils",
+                "libmedia",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboplus_10bitHeif",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/liboplus_10bitHeif.so",
+            ],
+            shared_libs: [
+                "libpng",
+                "libz",
+                "libdng_sdk",
+                "libpiex",
+                "libexpat",
+                "libft2",
+                "libharfbuzz_subset",
+                "libicu",
+                "libharfbuzz_ng",
+                "liblog",
+                "libbinder",
+                "liboplusHeifDecoderImpl",
+                "libjpeg",
+                "libcutils",
+                "libui",
+                "libgui",
+                "libutils",
+                "libjnigraphics",
+                "libnativehelper",
+                "liboplusmmdebug",
+                "libEGL",
+                "libGLESv2",
+                "libvulkan",
+                "libnativewindow",
+                "libheif",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/liboplus_10bitHeif.so",
+            ],
+            shared_libs: [
+                "libpng",
+                "libz",
+                "libdng_sdk",
+                "libpiex",
+                "libexpat",
+                "libft2",
+                "libharfbuzz_subset",
+                "libicu",
+                "libharfbuzz_ng",
+                "liblog",
+                "libbinder",
+                "liboplusHeifDecoderImpl",
+                "libjpeg",
+                "libcutils",
+                "libui",
+                "libgui",
+                "libutils",
+                "libjnigraphics",
+                "libnativehelper",
+                "liboplusmmdebug",
+                "libEGL",
+                "libGLESv2",
+                "libvulkan",
+                "libnativewindow",
+                "libheif",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboplus_heifconverter",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/liboplus_heifconverter.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "liboplusHeifDecoderImpl",
+                "libjpeg",
+                "libnativehelper",
+                "liboplus_10bitHeif",
+                "libui",
+                "libgui",
+                "libutils",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/liboplus_heifconverter.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "liboplusHeifDecoderImpl",
+                "libjpeg",
+                "libnativehelper",
+                "liboplus_10bitHeif",
+                "libui",
+                "libgui",
+                "libutils",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboplusheifwriter",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/liboplusheifwriter.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "libstagefright",
+                "libstagefright_foundation",
+                "liblog",
+                "libmedia_omx",
+                "libmedia",
+                "libmedia_codeclist",
+                "libnativehelper",
+                "libandroid_runtime",
+                "libnativewindow",
+                "libui",
+                "libgui",
+                "libbase",
+                "libjpeg",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/liboplusheifwriter.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "libstagefright",
+                "libstagefright_foundation",
+                "liblog",
+                "libmedia_omx",
+                "libmedia",
+                "libmedia_codeclist",
+                "libnativehelper",
+                "libandroid_runtime",
+                "libnativewindow",
+                "libui",
+                "libgui",
+                "libbase",
+                "libjpeg",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.dpm.api@1.0",
     owner: "oneplus",
     strip: {
@@ -19009,7 +19460,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full",
+                "libprotobuf-cpp-full-21.7",
                 "libcutils",
                 "liblog",
                 "libhidlbase",
@@ -23355,7 +23806,7 @@ cc_prebuilt_binary {
                 "android.hardware.health@2.0",
                 "libbinder_ndk",
                 "vendor.oplus.hardware.charger-V1-ndk",
-                "libprotobuf-cpp-lite",
+                "libprotobuf-cpp-lite-21.7",
                 "libostatslog",
                 "android.hardware.health-V1-ndk",
                 "vendor.oplus.hardware.displaypanelfeature@1.0",
@@ -23680,6 +24131,14 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
+    device_specific: true,
+}
+
+sh_binary {
+    name: "oplus_performance",
+    owner: "oneplus",
+    src: "proprietary/odm/bin/oplus_performance.sh",
+    filename: "oplus_performance.sh",
     device_specific: true,
 }
 
