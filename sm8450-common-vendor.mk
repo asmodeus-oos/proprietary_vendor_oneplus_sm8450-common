@@ -14,13 +14,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/ORANGE/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/ORANGE/acdb_cal.acdb \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/VDF/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/VDF/acdb_cal.acdb \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/acdbdata/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_cal.acdb \
-    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/btsar.cfg:$(TARGET_COPY_OUT_ODM)/etc/bt/btsar.cfg \
-    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21_eu.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21_eu.bin \
-    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21_in.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21_in.bin \
-    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21_na.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21_na.bin \
-    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21g_eu.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21g_eu.bin \
-    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21g_in.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21g_in.bin \
-    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21g_na.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21g_na.bin \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv20.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv20.bin \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21.bin \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21_ch1.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21_ch1.bin \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21g.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21g.bin \
+    vendor/oneplus/sm8450-common/proprietary/odm/etc/bt/hpnv21g_ch1.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv21g_ch1.bin \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/gps.conf:$(TARGET_COPY_OUT_ODM)/etc/gps.conf \
     vendor/oneplus/sm8450-common/proprietary/odm/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
@@ -341,6 +339,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     liboplusmmdebug \
     libpwirisfeature \
+    libsnsapi \
     libasphere \
     libaudiopreprocessing \
     libbundlewrapper \
@@ -666,7 +665,6 @@ PRODUCT_PACKAGES += \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsns_registry_skel \
-    libsnsapi \
     libsnsdiaglog \
     libsoc_helper \
     libspcom \
