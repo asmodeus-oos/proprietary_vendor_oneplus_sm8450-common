@@ -5091,7 +5091,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libc",
+                "libutils",
                 "libcutils",
                 "libhidlbase",
                 "libutils",
@@ -18799,7 +18799,6 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdservice.so",
             ],
             shared_libs: [
-                "libaudiobase",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -18818,6 +18817,7 @@ cc_prebuilt_library_shared {
                 "android.media.audio.common.types-V5-cpp",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
+                "libaudiobase",
                 "libhidlbase",
                 "vendor.qti.hardware.wifidisplaysession@1.0",
                 "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
@@ -23615,6 +23615,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "horae",
     owner: "oneplus",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
