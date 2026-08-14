@@ -973,11 +973,8 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
     vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
     vendor_lib_rfsa_adsp_libscveT2T_skel_so \
-    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8250_so \
-    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8350_so \
     vendor_lib_rfsa_adsp_libvpp_ais_networks \
     vendor_lib_rfsa_adsp_libvpp_vqa_networks \
-    vendor_lib_rfsa_adsp_libvpt_action_recognition \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \

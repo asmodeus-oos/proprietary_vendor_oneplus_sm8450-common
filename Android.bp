@@ -17716,24 +17716,6 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libtracker_6dof_skel_8250_so",
-    filename: "libtracker_6dof_skel_8250.so",
-    owner: "oneplus",
-    src: "proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8250.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libtracker_6dof_skel_8350_so",
-    filename: "libtracker_6dof_skel_8350.so",
-    owner: "oneplus",
-    src: "proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8350.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_libvpp_ais_networks",
     filename: "libvpp_ais_networks",
     owner: "oneplus",
@@ -17747,15 +17729,6 @@ prebuilt_rfsa {
     filename: "libvpp_vqa_networks",
     owner: "oneplus",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_vqa_networks",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libvpt_action_recognition",
-    filename: "libvpt_action_recognition",
-    owner: "oneplus",
-    src: "proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition",
     relative_install_path: "adsp",
     soc_specific: true,
 }
